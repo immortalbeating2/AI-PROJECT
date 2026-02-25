@@ -1,0 +1,73 @@
+profile_id: c2d852f37e1d08a98a85f82128fa50c8
+step: webdriver_connect
+time: 20260223_034542
+url: 
+title: 
+error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=144.0.7559.97)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff66994eb35
+	0x7ff6698b1220
+	0x7ff6697310dd
+	0x7ff669707c22
+	0x7ff6697bd3d6
+	0x7ff6697d97c2
+	0x7ff66977cc78
+	0x7ff66977db83
+	0x7ff669d2a050
+	0x7ff669d4f10d
+	0x7ff669d43fda
+	0x7ff669a21a35
+	0x7ff6698bdfdc
+	0x7ff6698b93a4
+	0x7ff6698b9556
+	0x7ff6698a7427
+	0x7ff89062e8d7
+	0x7ff89180c40c
+
+traceback:
+Traceback (most recent call last):
+  File "C:\Users\peng8\Desktop\AI PROJECT\coursera.py", line 1415, in run_automation
+    normalize_entry_page(driver, profile_id)
+  File "C:\Users\peng8\Desktop\AI PROJECT\coursera.py", line 939, in normalize_entry_page
+    if _is_logged_in_page(driver):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\peng8\Desktop\AI PROJECT\coursera.py", line 821, in _is_logged_in_page
+    return _find_visible_element(driver, account_menu_xpaths) is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\peng8\Desktop\AI PROJECT\coursera.py", line 512, in _find_visible_element
+    elements = driver.find_elements(By.XPATH, xp)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\software\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 847, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\software\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+  File "C:\software\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=144.0.7559.97)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff66994eb35
+	0x7ff6698b1220
+	0x7ff6697310dd
+	0x7ff669707c22
+	0x7ff6697bd3d6
+	0x7ff6697d97c2
+	0x7ff66977cc78
+	0x7ff66977db83
+	0x7ff669d2a050
+	0x7ff669d4f10d
+	0x7ff669d43fda
+	0x7ff669a21a35
+	0x7ff6698bdfdc
+	0x7ff6698b93a4
+	0x7ff6698b9556
+	0x7ff6698a7427
+	0x7ff89062e8d7
+	0x7ff89180c40c
+

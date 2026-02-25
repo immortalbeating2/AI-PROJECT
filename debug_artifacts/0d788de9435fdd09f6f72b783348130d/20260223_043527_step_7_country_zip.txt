@@ -1,0 +1,16 @@
+profile_id: 0d788de9435fdd09f6f72b783348130d
+step: step_7_country_zip
+time: 20260223_043527
+url: https://www.coursera.org/payments/checkout?cartId=632803780
+title: Secure Checkout | Coursera
+error: Message: No visible element found for xpaths: ["//input[@data-e2e='postalCode']", "//input[@id='cc-postalCode']", "//input[contains(@name, 'zip') or contains(@name, 'postal')]", "//input[contains(@id, 'zip') or contains(@id, 'postal')]", "//input[contains(@placeholder, 'ZIP') or contains(@placeholder, 'Zip') or contains(@placeholder, 'postal')]"]
+
+traceback:
+Traceback (most recent call last):
+  File "C:\Users\peng8\Desktop\AI PROJECT\Coursera.py", line 1372, in run_coursera_workflow
+    zip_input = _wait_for_visible_element(driver, zip_xpaths, timeout=15)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\peng8\Desktop\AI PROJECT\Coursera.py", line 528, in _wait_for_visible_element
+    raise TimeoutException(f"No visible element found for xpaths: {xpaths}")
+selenium.common.exceptions.TimeoutException: Message: No visible element found for xpaths: ["//input[@data-e2e='postalCode']", "//input[@id='cc-postalCode']", "//input[contains(@name, 'zip') or contains(@name, 'postal')]", "//input[contains(@id, 'zip') or contains(@id, 'postal')]", "//input[contains(@placeholder, 'ZIP') or contains(@placeholder, 'Zip') or contains(@placeholder, 'postal')]"]
+

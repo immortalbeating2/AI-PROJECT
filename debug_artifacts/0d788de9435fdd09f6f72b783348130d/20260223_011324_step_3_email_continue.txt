@@ -1,0 +1,58 @@
+profile_id: 0d788de9435fdd09f6f72b783348130d
+step: step_3_email_continue
+time: 20260223_011324
+url: https://www.coursera.org/professional-certificates/google-ai?action=enroll&authMode=signup
+title: Google AI Professional Certificate | Coursera
+error: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff66994eb35
+	0x7ff6698b1220
+	0x7ff6697310dd
+	0x7ff66978c40e
+	0x7ff66978c71c
+	0x7ff6697dd347
+	0x7ff6697d9e95
+	0x7ff66977cc78
+	0x7ff66977db83
+	0x7ff669d2a050
+	0x7ff669d4f10d
+	0x7ff669d43fda
+	0x7ff669a21a35
+	0x7ff6698bdfdc
+	0x7ff6698b93a4
+	0x7ff6698b9556
+	0x7ff6698a7427
+	0x7ff89062e8d7
+	0x7ff89180c40c
+
+traceback:
+Traceback (most recent call last):
+  File "C:\Users\peng8\Desktop\AI PROJECT\Coursera.py", line 319, in run_coursera_workflow
+    email_input = wait.until(EC.visibility_of_element_located((By.XPATH, "//input[@type='email']")))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\software\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff66994eb35
+	0x7ff6698b1220
+	0x7ff6697310dd
+	0x7ff66978c40e
+	0x7ff66978c71c
+	0x7ff6697dd347
+	0x7ff6697d9e95
+	0x7ff66977cc78
+	0x7ff66977db83
+	0x7ff669d2a050
+	0x7ff669d4f10d
+	0x7ff669d43fda
+	0x7ff669a21a35
+	0x7ff6698bdfdc
+	0x7ff6698b93a4
+	0x7ff6698b9556
+	0x7ff6698a7427
+	0x7ff89062e8d7
+	0x7ff89180c40c
+

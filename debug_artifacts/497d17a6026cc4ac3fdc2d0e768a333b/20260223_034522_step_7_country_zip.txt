@@ -1,0 +1,56 @@
+profile_id: 497d17a6026cc4ac3fdc2d0e768a333b
+step: step_7_country_zip
+time: 20260223_034522
+url: 
+title: 
+error: 'NoneType' object has no attribute 'is_displayed'
+traceback:
+Traceback (most recent call last):
+  File "C:\Users\peng8\Desktop\AI PROJECT\coursera.py", line 1265, in run_coursera_workflow
+    country_select = wait.until(EC.presence_of_element_located((By.XPATH, "//select[contains(@name, 'country') or contains(@id, 'country')]")))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\software\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff66994eb35
+	0x7ff6698b1220
+	0x7ff6697310dd
+	0x7ff66978c40e
+	0x7ff66978c71c
+	0x7ff6697dd347
+	0x7ff6697d9e95
+	0x7ff66977cc78
+	0x7ff66977db83
+	0x7ff669d2a050
+	0x7ff669d4f10d
+	0x7ff669d43fda
+	0x7ff669a21a35
+	0x7ff6698bdfdc
+	0x7ff6698b93a4
+	0x7ff6698b9556
+	0x7ff6698a7427
+	0x7ff89062e8d7
+	0x7ff89180c40c
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\peng8\Desktop\AI PROJECT\coursera.py", line 1273, in run_coursera_workflow
+    us_option = wait.until(
+                ^^^^^^^^^^^
+  File "C:\software\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 112, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\software\Python311\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 515, in _predicate
+    element = visibility_of(target)(driver)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\software\Python311\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 208, in _predicate
+    return _element_if_visible(element)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\software\Python311\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 223, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+                      ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'is_displayed'

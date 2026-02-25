@@ -1,0 +1,16 @@
+profile_id: 4260687a31341513d9a53c0212b7d52a
+step: step_12_agree_launch
+time: 20260223_164735
+url: https://www.coursera.org/learn/google-ai-fundamentals/home/module/1
+title: AI Fundamentals - Collaborate with AI - Week 1 | Coursera
+error: Message: No visible element found for xpaths: ["//button[contains(., 'Launch App')]", "//a[contains(., 'Launch App')]", "//button[contains(., 'Launch app')]", "//a[contains(., 'Launch app')]"]
+
+traceback:
+Traceback (most recent call last):
+  File "C:\Users\peng8\Desktop\AI PROJECT\Coursera.py", line 1552, in run_coursera_workflow
+    launch_btn = _wait_for_visible_element(driver, launch_xpaths, timeout=30)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\peng8\Desktop\AI PROJECT\Coursera.py", line 535, in _wait_for_visible_element
+    raise TimeoutException(f"No visible element found for xpaths: {xpaths}")
+selenium.common.exceptions.TimeoutException: Message: No visible element found for xpaths: ["//button[contains(., 'Launch App')]", "//a[contains(., 'Launch App')]", "//button[contains(., 'Launch app')]", "//a[contains(., 'Launch app')]"]
+

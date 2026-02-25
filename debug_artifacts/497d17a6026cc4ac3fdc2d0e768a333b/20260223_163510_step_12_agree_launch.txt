@@ -1,0 +1,16 @@
+profile_id: 497d17a6026cc4ac3fdc2d0e768a333b
+step: step_12_agree_launch
+time: 20260223_163510
+url: https://www.coursera.org/payments/checkout?cartId=633023916
+title: Secure Checkout | Coursera
+error: Message: No visible element found for xpaths: ["//button[contains(., 'Launch App')]", "//a[contains(., 'Launch App')]", "//button[contains(., 'Launch app')]", "//a[contains(., 'Launch app')]"]
+
+traceback:
+Traceback (most recent call last):
+  File "C:\Users\peng8\Desktop\AI PROJECT\Coursera.py", line 1546, in run_coursera_workflow
+    launch_btn = _wait_for_visible_element(driver, launch_xpaths, timeout=30)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\peng8\Desktop\AI PROJECT\Coursera.py", line 535, in _wait_for_visible_element
+    raise TimeoutException(f"No visible element found for xpaths: {xpaths}")
+selenium.common.exceptions.TimeoutException: Message: No visible element found for xpaths: ["//button[contains(., 'Launch App')]", "//a[contains(., 'Launch App')]", "//button[contains(., 'Launch app')]", "//a[contains(., 'Launch app')]"]
+

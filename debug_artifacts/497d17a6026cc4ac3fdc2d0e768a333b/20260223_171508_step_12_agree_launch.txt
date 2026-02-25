@@ -1,0 +1,12 @@
+profile_id: 497d17a6026cc4ac3fdc2d0e768a333b
+step: step_12_agree_launch
+time: 20260223_171508
+url: https://www.coursera.org/learn/google-ai-fundamentals/lecture/lkxJu/ai-fundamentals
+title: AI fundamentals | Coursera
+error: name '_take_debug_screenshot' is not defined
+traceback:
+Traceback (most recent call last):
+  File "C:\Users\peng8\Desktop\AI PROJECT\Coursera.py", line 1592, in run_coursera_workflow
+    _take_debug_screenshot(driver, profile_id, "step_12_failed")
+    ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name '_take_debug_screenshot' is not defined

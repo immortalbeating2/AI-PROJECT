@@ -1,0 +1,15 @@
+profile_id: 0d788de9435fdd09f6f72b783348130d
+step: step_8_card_and_submit
+time: 20260223_155941
+url: https://www.coursera.org/payments/checkout?cartId=632999252
+title: Secure Checkout | Coursera
+error: Message: Stripe field not found: cardnumber
+
+traceback:
+Traceback (most recent call last):
+  File "C:\Users\peng8\Desktop\AI PROJECT\Coursera.py", line 1392, in run_coursera_workflow
+    _fill_stripe_fields(driver, card_num, exp_date, cvc, timeout=35)
+  File "C:\Users\peng8\Desktop\AI PROJECT\Coursera.py", line 791, in _fill_stripe_fields
+    raise TimeoutException(f"Stripe field not found: {field_name}")
+selenium.common.exceptions.TimeoutException: Message: Stripe field not found: cardnumber
+

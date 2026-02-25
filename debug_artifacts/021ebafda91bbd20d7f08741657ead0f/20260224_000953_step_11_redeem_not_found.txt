@@ -1,0 +1,8 @@
+profile_id: 021ebafda91bbd20d7f08741657ead0f
+step: step_11_redeem_not_found
+time: 20260224_000953
+url: https://www.coursera.org/learn/google-ai-fundamentals/home/module/1
+title: AI Fundamentals - Collaborate with AI - Week 1 | Coursera
+error: manual debug capture: step_11_redeem_not_found
+traceback:
+NoneType: None

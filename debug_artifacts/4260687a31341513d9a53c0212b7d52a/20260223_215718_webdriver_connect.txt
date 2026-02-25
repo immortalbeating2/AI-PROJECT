@@ -1,0 +1,75 @@
+profile_id: 4260687a31341513d9a53c0212b7d52a
+step: webdriver_connect
+time: 20260223_215718
+url: 
+title: 
+error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=144.0.7559.97)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cbb7eb35
+	0x7ff7cbae1220
+	0x7ff7cb9610dd
+	0x7ff7cb937c22
+	0x7ff7cb9ed3d6
+	0x7ff7cba097c2
+	0x7ff7cb9acc78
+	0x7ff7cb9adb83
+	0x7ff7cbf5a050
+	0x7ff7cbf7f10d
+	0x7ff7cbf73fda
+	0x7ff7cbc51a35
+	0x7ff7cbaedfdc
+	0x7ff7cbae93a4
+	0x7ff7cbae9556
+	0x7ff7cbad7427
+	0x7ff89062e8d7
+	0x7ff89180c40c
+
+traceback:
+Traceback (most recent call last):
+  File "C:\Users\peng8\Desktop\AI PROJECT\coursera.py", line 1844, in run_automation
+    normalize_entry_page(driver, profile_id)
+  File "C:\Users\peng8\Desktop\AI PROJECT\coursera.py", line 1108, in normalize_entry_page
+    logout_and_go_home(driver, profile_id)
+  File "C:\Users\peng8\Desktop\AI PROJECT\coursera.py", line 1033, in logout_and_go_home
+    if _is_logged_in_page(driver):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\peng8\Desktop\AI PROJECT\coursera.py", line 950, in _is_logged_in_page
+    return _find_visible_element(driver, logged_in_xpaths) is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\peng8\Desktop\AI PROJECT\coursera.py", line 615, in _find_visible_element
+    elements = driver.find_elements(By.XPATH, xp)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\software\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 847, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\software\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+  File "C:\software\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=144.0.7559.97)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7cbb7eb35
+	0x7ff7cbae1220
+	0x7ff7cb9610dd
+	0x7ff7cb937c22
+	0x7ff7cb9ed3d6
+	0x7ff7cba097c2
+	0x7ff7cb9acc78
+	0x7ff7cb9adb83
+	0x7ff7cbf5a050
+	0x7ff7cbf7f10d
+	0x7ff7cbf73fda
+	0x7ff7cbc51a35
+	0x7ff7cbaedfdc
+	0x7ff7cbae93a4
+	0x7ff7cbae9556
+	0x7ff7cbad7427
+	0x7ff89062e8d7
+	0x7ff89180c40c
+

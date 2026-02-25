@@ -1,0 +1,11 @@
+profile_id: 0d788de9435fdd09f6f72b783348130d
+step: step_3_email_continue
+time: 20260223_042715
+url: https://www.coursera.org/professional-certificates/google-ai?action=enroll
+title: Google AI Professional Certificate | Coursera
+error: Step 3 did not reach full-name/password page after Continue.
+traceback:
+Traceback (most recent call last):
+  File "C:\Users\peng8\Desktop\AI PROJECT\Coursera.py", line 1085, in run_coursera_workflow
+    raise RuntimeError("Step 3 did not reach full-name/password page after Continue.")
+RuntimeError: Step 3 did not reach full-name/password page after Continue.

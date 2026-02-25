@@ -1,0 +1,18 @@
+profile_id: 0d788de9435fdd09f6f72b783348130d
+step: step_6_start_trial
+time: 20260223_012047
+url: https://www.coursera.org/professional-certificates/google-ai?action=enroll&authMode=signup
+title: Google AI Professional Certificate | Coursera
+error: Message: No visible element found for xpaths: ["//button[contains(., 'Start Free Trial')]", "//button[contains(., 'Start free trial')]", "//button[contains(., 'Free Trial')]"]
+
+traceback:
+Traceback (most recent call last):
+  File "C:\Users\peng8\Desktop\AI PROJECT\Coursera.py", line 451, in run_coursera_workflow
+    _click_first(
+  File "C:\Users\peng8\Desktop\AI PROJECT\Coursera.py", line 296, in _click_first
+    element = _wait_for_visible_element(driver, xpaths, timeout=timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\peng8\Desktop\AI PROJECT\Coursera.py", line 293, in _wait_for_visible_element
+    raise TimeoutException(f"No visible element found for xpaths: {xpaths}")
+selenium.common.exceptions.TimeoutException: Message: No visible element found for xpaths: ["//button[contains(., 'Start Free Trial')]", "//button[contains(., 'Start free trial')]", "//button[contains(., 'Free Trial')]"]
+
